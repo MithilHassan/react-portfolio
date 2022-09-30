@@ -6,7 +6,10 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 import Image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import model from "../public/3d-model.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
+import consulting from "../public/consulting.png";
 export default function Home() {
   return (
     <div>
@@ -38,11 +41,13 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium">
               Mithil Hassan
             </h2>
-            <h3 className="text-2xl py-2">Front-End Web Devloper</h3>
+            <h3 className="text-2xl py-2">Front-End Web Developer.</h3>
             <p className="text-md py-5 leading-8 text-gray-800">
-              Working with core Javascript and it's framework specially React.
-              Have hands-on experience in Html, Css, Bootstrap, Saas, Tailwind,
-              Materialize, JavaScript, Jquery, React, Firebase and NextJs.
+              I am a freelancer. Working with core Javascript and it&#39;s
+              framework specially React. Have hands-on experience in Html, Css,
+              Bootstrap, Saas, Tailwind, Materialize, JavaScript, Jquery, React,
+              Firebase and NextJs. Join me down below and let&#39;s get
+              cracking.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -51,7 +56,61 @@ export default function Home() {
             <AiFillYoutube />
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden ">
-            <Image src={deved} layout="fill" objectFit="cover" />
+            <Image src={model} layout="fill" objectFit="cover" alt="avatar" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 ">
+              Since the beginning of my journey as a freelance web developer,
+              I&#39;ve done remote work for
+              <span className="text-teal-500"> agencies </span>consulted for
+              <span className="text-teal-500"> startups </span>and collaborated
+              with talented people to create awesome dynamic and responsive
+              websites.
+            </p>
+          </div>
+          <div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} alt="" />
+              <h3 className="text-xl font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
+              <p className="py-2">
+                Besides quality also work on elegant designs suited for your
+                websites following core design theory.
+              </p>
+              <h4 className="py-4 text-teal-600">Tools I use</h4>
+              <p className="text-gray-800 py-1">PhotoShop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100} alt="" />
+              <h3 className="text-xl font-medium pt-8 pb-2">Code</h3>
+              <p className="py-2">
+                Use simple, re-useable and SEO friendly code to build fast and
+                user friendly website.
+              </p>
+              <h4 className="py-4 text-teal-600">Tools I use</h4>
+              <p className="text-gray-800 py-1">Visual Studio Code</p>
+              <p className="text-gray-800 py-1">GitHub</p>
+              <p className="text-gray-800 py-1">Chrome&#39;s DevTools</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100} alt="" />
+              <h3 className="text-xl font-medium pt-8 pb-2">Consulting</h3>
+              <p className="py-2">
+                Work with clients to promote the success of their business by
+                providing practical suggestions.
+              </p>
+              <h4 className="py-4 text-teal-600">Tools I use</h4>
+              <p className="text-gray-800 py-1">Zoom</p>
+              <p className="text-gray-800 py-1">Calendly</p>
+              <p className="text-gray-800 py-1">QuickBooks</p>
+              <p className="text-gray-800 py-1">Mailchimp</p>
+            </div>
           </div>
         </section>
       </main>
