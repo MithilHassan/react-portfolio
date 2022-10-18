@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
+        Gothic: ["Nanum Gothic Coding", "monospace"],
+        Poppins: ["Poppins", "sans-serif"],
       },
     },
   },
