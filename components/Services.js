@@ -2,7 +2,7 @@
 import Service from "./Service";
 import { motion } from "framer-motion";
 
-export default function Services() {
+export default function Services({ services }) {
   return (
     <section>
       <div>
@@ -17,7 +17,7 @@ export default function Services() {
           //Services
         </h3>
       </div>
-      <Service />
+      <Service services={services} />
     </section>
   );
 }

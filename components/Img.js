@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-export default function Img({ Src }) {
+import { urlFor } from "../sanity";
+export default function Img({ SRC }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -14,7 +15,7 @@ export default function Img({ Src }) {
         width={"100%"}
         height={"100%"}
         layout="responsive"
-        src={Src}
+        src={urlFor(SRC).url()}
         alt=""
       />
     </motion.div>

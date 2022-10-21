@@ -2,7 +2,7 @@
 import Img from "./Img";
 import { motion } from "framer-motion";
 
-export default function Portfolio() {
+export default function Portfolio({ portfolio }) {
   return (
     <section>
       <div>
@@ -17,12 +17,9 @@ export default function Portfolio() {
           //Portfolio
         </h3>
         <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-          <Img Src="/web1.png" />
-          <Img Src="/web2.png" />
-          <Img Src="/web3.png" />
-          <Img Src="/web4.png" />
-          <Img Src="/web5.png" />
-          <Img Src="/web6.png" />
+          {portfolio.map((pf) => (
+            <Img key={pf._id} SRC={pf.image} />
+          ))}
         </div>
       </div>
     </section>
